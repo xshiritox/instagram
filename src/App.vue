@@ -349,7 +349,7 @@ const handleCreateAccount = () => {
     font-size: 16px;
     line-height: 22px;
     padding: 12px 14px;
-    margin-top: 24px;   /* baja el botón en móviles */
+    margin-top: 18px;   /* baja el botón en móviles */
     border-radius: 25px; /* esquinas un poco más redondeadas en móviles */
   }
   /* Reducir el espacio superior del bloque Meta en móviles */
