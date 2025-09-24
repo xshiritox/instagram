@@ -328,11 +328,13 @@ const handleCreateAccount = () => {
   .form-input {
     font-size: 16px; /* Evitar el zoom de iOS y mejorar la legibilidad */
     padding: 12px 12px;
+    border-radius: 10px; /* esquinas un poco más redondeadas en móviles */
   }
   .login-button {
     font-size: 16px;
     line-height: 22px;
     padding: 12px 14px;
+    border-radius: 25px; /* esquinas un poco más redondeadas en móviles */
   }
   .forgot-password a {
     font-size: 14px;
@@ -348,6 +350,7 @@ const handleCreateAccount = () => {
     line-height: 22px;
     padding: 12px 14px;
     margin-top: 24px;   /* baja el botón en móviles */
+    border-radius: 25px; /* esquinas un poco más redondeadas en móviles */
   }
   /* Reducir el espacio superior del bloque Meta en móviles */
   .meta-logo {
