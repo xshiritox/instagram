@@ -295,7 +295,7 @@ const handleCreateAccount = () => {
     border: none;
     background: transparent;
   }
-  /* Make overall spacing tighter but text and controls larger for readability */
+  /* Haga que el espaciado general sea más ajustado, pero que el texto y los controles sean más grandes para facilitar la lectura. */
   .main-container {
     margin-top: 60px;
     padding: 28px;
@@ -315,7 +315,7 @@ const handleCreateAccount = () => {
     gap: 10px;
   }
   .form-input {
-    font-size: 16px; /* Prevent iOS zoom and improve readability */
+    font-size: 16px; /* Evitar el zoom de iOS y mejorar la legibilidad */
     padding: 12px 12px;
   }
   .login-button {
@@ -335,9 +335,12 @@ const handleCreateAccount = () => {
     font-size: 16px;
     line-height: 22px;
     padding: 12px 14px;
+    margin-top: 24px;   /* baja el botón en móviles */
   }
   .meta-text {
     font-size: 16px;
+    display: block;      /* convertir en bloque para que el margin-top surta efecto */
+    margin-top: 180px;    /* baja el texto “Meta” */
   }
 }
 </style>
