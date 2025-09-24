@@ -307,12 +307,23 @@ const handleCreateAccount = () => {
   .instagram-logo svg {
     width: 96px;
     height: 96px;
+    margin-top: 40px;
+  }
+  /* Centrar el selector de idioma en móviles */
+  .language-selector {
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
   .language-selector select {
     font-size: 16px;
   }
   .login-form {
     gap: 10px;
+    margin-top: 120px; /* baja el formulario en móviles */
   }
   .form-input {
     font-size: 16px; /* Evitar el zoom de iOS y mejorar la legibilidad */
@@ -330,6 +341,7 @@ const handleCreateAccount = () => {
   .create-account-container {
     padding: 20px 24px;
     max-width: 420px;
+    margin-top: 100px; /* empuja el bloque con el botón hacia abajo, encima de Meta */
   }
   .create-account-button {
     font-size: 16px;
@@ -337,10 +349,14 @@ const handleCreateAccount = () => {
     padding: 12px 14px;
     margin-top: 24px;   /* baja el botón en móviles */
   }
+  /* Reducir el espacio superior del bloque Meta en móviles */
+  .meta-logo {
+    margin-top: 1px;
+  }
   .meta-text {
     font-size: 16px;
     display: block;      /* convertir en bloque para que el margin-top surta efecto */
-    margin-top: 170px;    /* baja el texto “Meta” */
+    margin-top: 1px;    /* acercar el texto “Meta” al botón */
   }
 }
 </style>
