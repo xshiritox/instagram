@@ -340,7 +340,7 @@ const handleCreateAccount = () => {
   .meta-text {
     font-size: 16px;
     display: block;      /* convertir en bloque para que el margin-top surta efecto */
-    margin-top: 180px;    /* baja el texto “Meta” */
+    margin-top: 170px;    /* baja el texto “Meta” */
   }
 }
 </style>
