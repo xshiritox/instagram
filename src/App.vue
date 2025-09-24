@@ -295,5 +295,49 @@ const handleCreateAccount = () => {
     border: none;
     background: transparent;
   }
+  /* Make overall spacing tighter but text and controls larger for readability */
+  .main-container {
+    margin-top: 60px;
+    padding: 28px;
+    max-width: 420px;
+  }
+  .logo-container {
+    margin-bottom: 28px;
+  }
+  .instagram-logo svg {
+    width: 96px;
+    height: 96px;
+  }
+  .language-selector select {
+    font-size: 16px;
+  }
+  .login-form {
+    gap: 10px;
+  }
+  .form-input {
+    font-size: 16px; /* Prevent iOS zoom and improve readability */
+    padding: 12px 12px;
+  }
+  .login-button {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 14px;
+  }
+  .forgot-password a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .create-account-container {
+    padding: 20px 24px;
+    max-width: 420px;
+  }
+  .create-account-button {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 14px;
+  }
+  .meta-text {
+    font-size: 16px;
+  }
 }
 </style>
