@@ -198,8 +198,8 @@ const handleCreateAccount = () => {
 }
 
 .login-button {
-  background: #0095f6;
-  border: 1px solid #0095f6;
+  background: #096cee;
+  border: 1px solid #096cee;
   border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
@@ -215,8 +215,8 @@ const handleCreateAccount = () => {
 }
 
 .login-button:hover {
-  background: #1877f2;
-  border-color: #1877f2;
+  background: #096cee;
+  border-color: #096cee;
 }
 
 .login-button:active {
@@ -229,7 +229,7 @@ const handleCreateAccount = () => {
 }
 
 .forgot-password a {
-  color: #00376b;
+  color: #000000b2;
   font-size: 12px;
   line-height: 14px;
   margin-top: 12px;
@@ -238,7 +238,7 @@ const handleCreateAccount = () => {
 }
 
 .forgot-password a:hover {
-  color: #003569;
+  color: #096cee;
 }
 
 .create-account-container {
@@ -255,9 +255,9 @@ const handleCreateAccount = () => {
 
 .create-account-button {
   background: transparent;
-  border: 1px solid #0095f6;
+  border: 1px solid #096cee;
   border-radius: 4px;
-  color: #0095f6;
+  color: #096cee;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -270,7 +270,7 @@ const handleCreateAccount = () => {
 }
 
 .create-account-button:hover {
-  background: #0095f6;
+  background: #096cee;
   color: white;
 }
 
@@ -284,7 +284,7 @@ const handleCreateAccount = () => {
 .meta-text {
   font-size: 14px;
   font-weight: 600;
-  color: #737373;
+  color: #000000b2;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   letter-spacing: 0.5px;
 }
