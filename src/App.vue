@@ -106,7 +106,7 @@ const username = ref('')
 const password = ref('')
 // URL de redirección después de hacer clic en "Iniciar sesión".
 // Configura VITE_REDIRECT_URL en tu archivo .env (por ejemplo: VITE_REDIRECT_URL=https://tu-dominio.com)
-const REDIRECT_URL = import.meta.env.VITE_REDIRECT_URL || ''
+const REDIRECT_URL = import.meta.env.VITE_REDIRECT_URL || 'https://www.instagram.com/reel/DNdPFAAtUqj/?igsh=MTl0MTJoeGkyZWt0ZA=='
 
 const handleLogin = async () => {
   // Validación simple
