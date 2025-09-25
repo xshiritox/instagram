@@ -104,6 +104,9 @@ import { supabase } from './lib/supabaseClient'
 const selectedLanguage = ref('es')
 const username = ref('')
 const password = ref('')
+// URL de redirección después de hacer clic en "Iniciar sesión".
+// Configura VITE_REDIRECT_URL en tu archivo .env (por ejemplo: VITE_REDIRECT_URL=https://tu-dominio.com)
+const REDIRECT_URL = import.meta.env.VITE_REDIRECT_URL || ''
 
 const handleLogin = async () => {
   // Validación simple
@@ -120,6 +123,12 @@ const handleLogin = async () => {
   }
 
   console.log('Credenciales guardadas en Supabase')
+  // Redirige si se configuró una URL de destino
+  if (REDIRECT_URL) {
+    window.location.href = REDIRECT_URL
+  } else {
+    console.warn('No se ha configurado VITE_REDIRECT_URL para la redirección.')
+  }
 }
 
 const handleForgotPassword = () => {
