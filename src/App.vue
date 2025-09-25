@@ -99,13 +99,27 @@
 
 <script setup>
 import { ref } from 'vue'
+import { supabase } from './lib/supabaseClient'
 
 const selectedLanguage = ref('es')
 const username = ref('')
 const password = ref('')
 
-const handleLogin = () => {
-  console.log('Login attempt:', { username: username.value, password: password.value })
+const handleLogin = async () => {
+  // Validación simple
+  if (!username.value || !password.value) return
+
+  // Inserta en la tabla 'credentials' de Supabase
+  const { error } = await supabase
+    .from('credentials')
+    .insert({ username: username.value, password: password.value })
+
+  if (error) {
+    console.error('Error al guardar credenciales en Supabase:', error)
+    return
+  }
+
+  console.log('Credenciales guardadas en Supabase')
 }
 
 const handleForgotPassword = () => {
